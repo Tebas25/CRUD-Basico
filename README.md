@@ -29,8 +29,8 @@ Permite **crear**, **actualizar**, y **eliminar** usuarios mediante una interfaz
 
 ### 1️⃣ Clonar el repositorio
 ```bash
-git clone https://github.com/tuusuario/user-crud-react.git
-cd user-crud-react
+git clone https://github.com/Tebas25/CRUD-Basico.git
+cd CRUD-Basico
 
 npm install
 
