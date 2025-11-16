@@ -1,7 +1,9 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
-import CrudPage from "../pages/CrudPage";
 import ProtectedRoute from "./ProtectedRoutes";
+import HomePage from "../pages/HomePage";
+import EmployeePage from "../pages/Employees/EmployeePage";
+import AdministrationPage from "../pages/Administration/AdministrationPage";
 
 const AppRoutes = () => {
 
@@ -9,10 +11,26 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/login" element={<LoginPage />} />
       <Route
-        path="/crud"
+        path="/home"
         element={
           <ProtectedRoute>
-            <CrudPage />
+            <HomePage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/employees"
+        element={
+          <ProtectedRoute>
+            <EmployeePage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/administration"
+        element={
+          <ProtectedRoute>
+            <AdministrationPage />
           </ProtectedRoute>
         }
       />

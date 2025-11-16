@@ -22,17 +22,21 @@ const Layout = ({ title = "Panel de Administración", children }: LayoutProps) =
       <header className="layout-header">
         <div className="layout-left">
           <h1 className="layout-title">{title}</h1>
+          <ul className="layout-nav">
+            <li onClick={() => navigate("/home")}>Home</li>
+            <li onClick={() => navigate("/employees")}>Empleados</li>
+            <li>Área</li>
+            <li onClick={() => navigate("/administration")}>Administración</li>
+          </ul>
         </div>
+
         <div className="layout-right">
-          <button className="layout-btn">Usuarios</button>
-          <button className="layout-btn">Configuración</button>
           <button className="layout-btn logout" onClick={handleLogout}>
-            Cerrar sesión
+            Cerrar Sesión
           </button>
         </div>
       </header>
 
-      {/* Contenido principal */}
       <main className="layout-content">{children}</main>
     </div>
   );

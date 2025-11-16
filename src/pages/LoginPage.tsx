@@ -21,7 +21,7 @@ const LoginPage = () => {
     const success = await login(email, password);
 
     if (success) {
-      navigate("/crud");
+      navigate("/home");
     } else {
       setError("Credenciales incorrectas o usuario no encontrado");
     }

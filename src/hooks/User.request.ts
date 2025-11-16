@@ -14,7 +14,7 @@ export const createUserRequest = async (data: {
 
 // Eliminar usuario
 export const deleteUserRequest = async (email: string) => {
-  const response = await axios.delete(`${API_BASE}/delete-user`, {
+  const response = await axios.post(`${API_BASE}/delete-user`, {
     data: { email },
   });
   return response.data;
@@ -26,6 +26,6 @@ export const updateUserRequest = async (data: {
   email: string;
   password: string;
 }) => {
-  const response = await axios.put(`${API_BASE}/update-user`, data);
+  const response = await axios.post(`${API_BASE}/update-user`, data);
   return response.data;
 };

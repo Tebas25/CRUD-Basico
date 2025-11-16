@@ -1,0 +1,238 @@
+/* administration.css */
+.admin-page {
+  padding: 1.5rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.admin-header {
+  margin-bottom: 1.5rem;
+}
+
+.admin-header h1 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.admin-header p {
+  color: #6b7280;
+  margin: 0.5rem 0 0 0;
+}
+
+.controls-panel {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.select-all-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.selection-count {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.controls-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.refresh-btn, .new-season-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.refresh-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.new-season-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.new-season-btn:hover {
+  background-color: #2563eb;
+}
+
+.seasons-table-container {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.loading-state, .empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #6b7280;
+}
+
+.loading-state {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loading-spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.seasons-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.seasons-table th,
+.seasons-table td {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.seasons-table th {
+  background-color: #f9fafb;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.seasons-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.seasons-table tbody tr.selected-row {
+  background-color: #dbeafe;
+}
+
+.multiplier-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.multiplier-badge.high {
+  background-color: #fecaca;
+  color: #dc2626;
+}
+
+.multiplier-badge.low {
+  background-color: #bbf7d0;
+  color: #16a34a;
+}
+
+.multiplier-badge.normal {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  margin-right: 1rem;
+}
+
+.edit-btn {
+  color: #3b82f6;
+}
+
+.edit-btn:hover {
+  color: #2563eb;
+}
+
+.delete-btn {
+  color: #ef4444;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-card.total {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.stat-card.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.stat-card.selected {
+  background-color: #f3e8ff;
+  color: #7c3aed;
+}

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../components/layout.component";
 import UserForm from "../components/UserForm";
 
-const CrudPage = () => {
+const HomePage = () => {
   const navigate = useNavigate();
   const { logout } = useAuth();
 
@@ -32,4 +32,4 @@ const CrudPage = () => {
   );
 };
 
-export default CrudPage;
+export default HomePage;
