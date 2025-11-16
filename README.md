@@ -1,7 +1,7 @@
 # 🧠 User CRUD – React + FastAPI
 
-Este proyecto es una aplicación web simple de **gestión de usuarios (CRUD)** desarrollada con **React (Frontend)** y **FastAPI (Backend)**.  
-Permite **crear**, **actualizar**, y **eliminar** usuarios mediante una interfaz intuitiva y peticiones HTTP al servidor local.
+Este proyecto es una aplicación web simple de **Adminisrtración** desarrollada con **React (Frontend)** y **FastAPI (Backend)**.  
+Permite realizar actividades administrativas mediante una interfaz intuitiva y peticiones HTTP al servidor local.
 
 ---
 
@@ -17,7 +17,7 @@ Permite **crear**, **actualizar**, y **eliminar** usuarios mediante una interfaz
 
 ### ⚙️ Backend
 - **FastAPI** como framework principal
-- Endpoints expuestos en `http://localhost:8000/login/`
+- Endpoints expuestos en `http://localhost:8000/`
 - Devuelve respuestas en formato **JSON**
 
 ---
