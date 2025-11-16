@@ -29,8 +29,8 @@ Permite realizar actividades administrativas mediante una interfaz intuitiva y p
 
 ### 1️⃣ Clonar el repositorio
 ```bash
-git clone https://github.com/Tebas25/CRUD-Basico.git
-cd CRUD-Basico
+git clone https://github.com/Tebas25/Frontend-IngWeb.git
+cd Frontend-IngWeb
 
 npm install
 
